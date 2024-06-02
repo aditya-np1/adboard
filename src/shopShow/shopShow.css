@@ -1,0 +1,39 @@
+.image-container {
+    display: grid;
+    /* Use grid instead of flexbox */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    /* Create 20 columns for images */
+    grid-gap: 50px;
+    /* Add spacing between images */
+ 
+    
+}
+
+.image-container img {
+    border-radius: 20px;
+    /* Keep border radius */
+    width: 100%;
+    height: auto;
+    margin: 0;
+    /* Remove margins */
+}
+.row-text {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(195, 69, 69);
+    text-align: center;
+    margin-top: 10px;
+    /* Adjust spacing above text */
+}
+.image-container div {
+    transition: transform 0.3s ease-in-out;
+}
+.image-container div:hover {
+    transform: scale(1.1);
+}
+/* 
+.image-container div :hover,
+.image-container div:active {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+} */
